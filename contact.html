@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact — Avery Kemp</title>
+  <style>
+    form { background:#136f63; padding:16px; }
+    textarea { background:#fff59d; }
+    button[type="submit"] { background:#22c55e; }
+    button[type="reset"]  { background:#f97316; }
+    .row { margin-bottom:10px; }
+    label { display:block; }
+    fieldset { border:1px solid #ccc; padding:8px; }
+    legend { font-weight:600; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="projects.html">Projects</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <h1>Contact</h1>
+
+  <form action="#" method="post">
+    <div class="row">
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" name="firstName" required>
+    </div>
+
+    <div class="row">
+      <label for="lastName">Last name</label>
+      <input type="text" id="lastName" name="lastName" required>
+    </div>
+
+    <div class="row">
+      <label for="topic">Reason for contact</label>
+      <select id="topic" name="topic" required>
+        <option value="">-- Select one --</option>
+        <option value="project">Project inquiry</option>
+        <option value="collab">Collaboration</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <fieldset class="row">
+      <legend>Preferred response time</legend>
+      <label><input type="radio" name="response" value="24h" required> Within 24 hours</label>
+      <label><input type="radio" name="response" value="3d"> Within 3 days</label>
+      <label><input type="radio" name="response" value="week"> Within a week</label>
+    </fieldset>
+
+    <div class="row">
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments" rows="6" cols="60"></textarea>
+    </div>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>
